@@ -3,9 +3,9 @@
 
 ## ℹ️ Total overtime
 
-- Total requests: 136283
-- ✅ OK: 136171 (99.92%)
-- ❌ Errors: 112 (0.08%)
+- Total requests: 155752
+- ✅ OK: 155624 (99.92%)
+- ❌ Errors: 128 (0.08%)
 
 
 ## 🚨 Current Issues
@@ -32,62 +32,62 @@
 
 | Release | Status | OK | Errors |
 | --- | --- | --- | --- |
-| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 7 |
-| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 7 |
-| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 7 |
-| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 7 |
-| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 7 |
+| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 8 |
+| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 8 |
+| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 8 |
+| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 8 |
+| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 8 |
 
 ## 🚨 Last Week
 
 | Release | Status | OK | Errors |
 | --- | --- | --- | --- |
-| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 7 |
-| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 7 |
-| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 7 |
-| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 7 |
-| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 7 |
+| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 8 |
+| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 8 |
+| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 8 |
+| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 8 |
+| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 8 |
 
 ## 🚨 Last Month
 
 | Release | Status | OK | Errors |
 | --- | --- | --- | --- |
-| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 7 |
-| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 7 |
-| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 7 |
-| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 7 |
-| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 7 |
-| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 7 |
-| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 7 |
+| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 8 |
+| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 8 |
+| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 8 |
+| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 8 |
+| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 8 |
+| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 8 |
+| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 8 |
 
