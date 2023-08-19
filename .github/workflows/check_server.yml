@@ -32,7 +32,7 @@ jobs:
         
 
     - name: Generate Report
-      run: npm run generate:report"
+      run: npm run generate:report
 
       
     - name: Commit and push changes
