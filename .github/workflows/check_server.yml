@@ -1,0 +1,42 @@
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: '0 * * * *'
+
+name: 📦 Check dist server
+
+permissions:
+  contents: write
+  packages: none
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '20.5.1'
+        cache: 'npm'
+
+    - name: Collect Releases
+      run: npm run collect:releases
+
+
+    - name: Check Availability
+      run: npm run check:availability
+
+
+    - name: Generate Metrics
+      run: npm run generate:metrics
+        
+
+    - name: Generate Report
+      run: npm run generate:report"
+
+      
+    - name: Commit and push changes
+      uses: devops-infra/action-commit-push@5c032a8e0e84830905895b652bc1766255145cf4 # v1.0.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: "chore: update dist server status"
