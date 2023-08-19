@@ -3,13 +3,44 @@
 
 ## ℹ️ Total overtime
 
-- Total requests: 233628
-- ✅ OK: 233416 (99.91%)
-- ❌ Errors: 212 (0.09%)
+- Total requests: 253097
+- ✅ OK: 252838 (99.90%)
+- ❌ Errors: 259 (0.10%)
 
 
 ## 🚨 Current Issues
 
+- [v18.17.1/node-v18.17.1-x64.msi](https://nodejs.org/dist/v18.17.1/node-v18.17.1-x64.msi)
+- [v18.14.2/win-x86/node.exe](https://nodejs.org/dist/v18.14.2/win-x86/node.exe)
+- [v18.6.0/node-v18.6.0-x64.msi](https://nodejs.org/dist/v18.6.0/node-v18.6.0-x64.msi)
+- [v18.3.0/node-v18.3.0-darwin-x64.tar.gz](https://nodejs.org/dist/v18.3.0/node-v18.3.0-darwin-x64.tar.gz)
+- [v16.14.2/win-x64/node.lib](https://nodejs.org/dist/v16.14.2/win-x64/node.lib)
+- [v16.6.0/node-v16.6.0.tar.xz](https://nodejs.org/dist/v16.6.0/node-v16.6.0.tar.xz)
+- [v16.3.0/node-v16.3.0-linux-x64.tar.xz](https://nodejs.org/dist/v16.3.0/node-v16.3.0-linux-x64.tar.xz)
+- [v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz)
+- [v15.13.0/node-v15.13.0-x64.msi](https://nodejs.org/dist/v15.13.0/node-v15.13.0-x64.msi)
+- [v15.2.0/node-v15.2.0-win-x86.zip](https://nodejs.org/dist/v15.2.0/node-v15.2.0-win-x86.zip)
+- [v15.0.1/node-v15.0.1-win-x64.7z](https://nodejs.org/dist/v15.0.1/node-v15.0.1-win-x64.7z)
+- [v14.17.6/win-x86/node_pdb.7z](https://nodejs.org/dist/v14.17.6/win-x86/node_pdb.7z)
+- [v14.13.1/node-v14.13.1-linux-armv7l.tar.gz](https://nodejs.org/dist/v14.13.1/node-v14.13.1-linux-armv7l.tar.gz)
+- [v14.11.0/node-v14.11.0-darwin-x64.tar.xz](https://nodejs.org/dist/v14.11.0/node-v14.11.0-darwin-x64.tar.xz)
+- [v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz)
+- [v12.22.6/win-x86/node.exe](https://nodejs.org/dist/v12.22.6/win-x86/node.exe)
+- [v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz](https://nodejs.org/dist/v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz)
+- [v12.11.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v12.11.0/win-x64/node_pdb.7z)
+- [v12.10.0/node-v12.10.0-win-x64.7z](https://nodejs.org/dist/v12.10.0/node-v12.10.0-win-x64.7z)
+- [v12.8.0/node-v12.8.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v12.8.0/node-v12.8.0-aix-ppc64.tar.gz)
+- [v10.4.0/node-v10.4.0.pkg](https://nodejs.org/dist/v10.4.0/node-v10.4.0.pkg)
+- [v10.2.0/node-v10.2.0-headers.tar.gz](https://nodejs.org/dist/v10.2.0/node-v10.2.0-headers.tar.gz)
+- [v9.6.0/node-v9.6.0-headers.tar.gz](https://nodejs.org/dist/v9.6.0/node-v9.6.0-headers.tar.gz)
+- [v9.2.1/node-v9.2.1-linux-armv6l.tar.gz](https://nodejs.org/dist/v9.2.1/node-v9.2.1-linux-armv6l.tar.gz)
+- [v8.10.0/node-v8.10.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v8.10.0/node-v8.10.0-aix-ppc64.tar.gz)
+- [v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz](https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz)
+- [v6.12.0/node-v6.12.0.tar.xz](https://nodejs.org/dist/v6.12.0/node-v6.12.0.tar.xz)
+- [v6.6.0/node-v6.6.0-linux-armv6l.tar.xz](https://nodejs.org/dist/v6.6.0/node-v6.6.0-linux-armv6l.tar.xz)
+- [v4.9.1/node-v4.9.1-sunos-x86.tar.gz](https://nodejs.org/dist/v4.9.1/node-v4.9.1-sunos-x86.tar.gz)
+- [v4.5.0/node-v4.5.0-headers.tar.gz](https://nodejs.org/dist/v4.5.0/node-v4.5.0-headers.tar.gz)
+- [v4.0.0/node-v4.0.0.tar.xz](https://nodejs.org/dist/v4.0.0/node-v4.0.0.tar.xz)
 - [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe)
 - [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb)
 - [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe)
@@ -32,122 +63,215 @@
 
 | Release | Status | OK | Errors |
 | --- | --- | --- | --- |
-| [v18.12.1/win-x64/node.exe](https://nodejs.org/dist/v18.12.1/win-x64/node.exe) | ❌ | 11 | 1 |
-| [v16.20.1/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.20.1/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v16.19.1/node-v16.19.1-linux-s390x.tar.gz](https://nodejs.org/dist/v16.19.1/node-v16.19.1-linux-s390x.tar.gz) | ❌ | 11 | 1 |
-| [v16.15.0/node-v16.15.0-linux-s390x.tar.xz](https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-s390x.tar.xz) | ❌ | 11 | 1 |
-| [v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v16.9.1/win-x86/node_pdb.zip](https://nodejs.org/dist/v16.9.1/win-x86/node_pdb.zip) | ❌ | 11 | 1 |
-| [v16.9.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.9.0/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v16.7.0/node-v16.7.0-darwin-x64.tar.gz](https://nodejs.org/dist/v16.7.0/node-v16.7.0-darwin-x64.tar.gz) | ❌ | 11 | 1 |
-| [v16.6.2/node-v16.6.2-linux-arm64.tar.gz](https://nodejs.org/dist/v16.6.2/node-v16.6.2-linux-arm64.tar.gz) | ❌ | 11 | 1 |
-| [v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v15.3.0/node-v15.3.0-linux-s390x.tar.gz](https://nodejs.org/dist/v15.3.0/node-v15.3.0-linux-s390x.tar.gz) | ❌ | 11 | 1 |
-| [v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v14.21.0/win-x64/node_pdb.zip](https://nodejs.org/dist/v14.21.0/win-x64/node_pdb.zip) | ❌ | 11 | 1 |
-| [v14.18.1/node-v14.18.1.pkg](https://nodejs.org/dist/v14.18.1/node-v14.18.1.pkg) | ❌ | 11 | 1 |
-| [v14.10.1/node-v14.10.1-aix-ppc64.tar.gz](https://nodejs.org/dist/v14.10.1/node-v14.10.1-aix-ppc64.tar.gz) | ❌ | 11 | 1 |
-| [v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v13.14.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v13.14.0/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v13.7.0/win-x64/node.exe](https://nodejs.org/dist/v13.7.0/win-x64/node.exe) | ❌ | 11 | 1 |
-| [v12.22.6/node-v12.22.6-x64.msi](https://nodejs.org/dist/v12.22.6/node-v12.22.6-x64.msi) | ❌ | 11 | 1 |
-| [v12.5.0/win-x86/node.exe](https://nodejs.org/dist/v12.5.0/win-x86/node.exe) | ❌ | 11 | 1 |
-| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 12 |
-| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 12 |
-| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 12 |
-| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 12 |
-| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 12 |
+| [v18.17.1/node-v18.17.1-x64.msi](https://nodejs.org/dist/v18.17.1/node-v18.17.1-x64.msi) | ❌ | 12 | 1 |
+| [v18.14.2/win-x86/node.exe](https://nodejs.org/dist/v18.14.2/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v18.12.1/win-x64/node.exe](https://nodejs.org/dist/v18.12.1/win-x64/node.exe) | ❌ | 12 | 1 |
+| [v18.6.0/node-v18.6.0-x64.msi](https://nodejs.org/dist/v18.6.0/node-v18.6.0-x64.msi) | ❌ | 12 | 1 |
+| [v18.3.0/node-v18.3.0-darwin-x64.tar.gz](https://nodejs.org/dist/v18.3.0/node-v18.3.0-darwin-x64.tar.gz) | ❌ | 12 | 1 |
+| [v16.20.1/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.20.1/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v16.19.1/node-v16.19.1-linux-s390x.tar.gz](https://nodejs.org/dist/v16.19.1/node-v16.19.1-linux-s390x.tar.gz) | ❌ | 12 | 1 |
+| [v16.15.0/node-v16.15.0-linux-s390x.tar.xz](https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-s390x.tar.xz) | ❌ | 12 | 1 |
+| [v16.14.2/win-x64/node.lib](https://nodejs.org/dist/v16.14.2/win-x64/node.lib) | ❌ | 12 | 1 |
+| [v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v16.9.1/win-x86/node_pdb.zip](https://nodejs.org/dist/v16.9.1/win-x86/node_pdb.zip) | ❌ | 12 | 1 |
+| [v16.9.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.9.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v16.7.0/node-v16.7.0-darwin-x64.tar.gz](https://nodejs.org/dist/v16.7.0/node-v16.7.0-darwin-x64.tar.gz) | ❌ | 12 | 1 |
+| [v16.6.2/node-v16.6.2-linux-arm64.tar.gz](https://nodejs.org/dist/v16.6.2/node-v16.6.2-linux-arm64.tar.gz) | ❌ | 12 | 1 |
+| [v16.6.0/node-v16.6.0.tar.xz](https://nodejs.org/dist/v16.6.0/node-v16.6.0.tar.xz) | ❌ | 12 | 1 |
+| [v16.3.0/node-v16.3.0-linux-x64.tar.xz](https://nodejs.org/dist/v16.3.0/node-v16.3.0-linux-x64.tar.xz) | ❌ | 12 | 1 |
+| [v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v15.13.0/node-v15.13.0-x64.msi](https://nodejs.org/dist/v15.13.0/node-v15.13.0-x64.msi) | ❌ | 12 | 1 |
+| [v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v15.3.0/node-v15.3.0-linux-s390x.tar.gz](https://nodejs.org/dist/v15.3.0/node-v15.3.0-linux-s390x.tar.gz) | ❌ | 12 | 1 |
+| [v15.2.0/node-v15.2.0-win-x86.zip](https://nodejs.org/dist/v15.2.0/node-v15.2.0-win-x86.zip) | ❌ | 12 | 1 |
+| [v15.0.1/node-v15.0.1-win-x64.7z](https://nodejs.org/dist/v15.0.1/node-v15.0.1-win-x64.7z) | ❌ | 12 | 1 |
+| [v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v14.21.0/win-x64/node_pdb.zip](https://nodejs.org/dist/v14.21.0/win-x64/node_pdb.zip) | ❌ | 12 | 1 |
+| [v14.18.1/node-v14.18.1.pkg](https://nodejs.org/dist/v14.18.1/node-v14.18.1.pkg) | ❌ | 12 | 1 |
+| [v14.17.6/win-x86/node_pdb.7z](https://nodejs.org/dist/v14.17.6/win-x86/node_pdb.7z) | ❌ | 12 | 1 |
+| [v14.13.1/node-v14.13.1-linux-armv7l.tar.gz](https://nodejs.org/dist/v14.13.1/node-v14.13.1-linux-armv7l.tar.gz) | ❌ | 12 | 1 |
+| [v14.11.0/node-v14.11.0-darwin-x64.tar.xz](https://nodejs.org/dist/v14.11.0/node-v14.11.0-darwin-x64.tar.xz) | ❌ | 12 | 1 |
+| [v14.10.1/node-v14.10.1-aix-ppc64.tar.gz](https://nodejs.org/dist/v14.10.1/node-v14.10.1-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v13.14.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v13.14.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v13.7.0/win-x64/node.exe](https://nodejs.org/dist/v13.7.0/win-x64/node.exe) | ❌ | 12 | 1 |
+| [v12.22.6/node-v12.22.6-x64.msi](https://nodejs.org/dist/v12.22.6/node-v12.22.6-x64.msi) | ❌ | 12 | 1 |
+| [v12.22.6/win-x86/node.exe](https://nodejs.org/dist/v12.22.6/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz](https://nodejs.org/dist/v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v12.11.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v12.11.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v12.10.0/node-v12.10.0-win-x64.7z](https://nodejs.org/dist/v12.10.0/node-v12.10.0-win-x64.7z) | ❌ | 12 | 1 |
+| [v12.8.0/node-v12.8.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v12.8.0/node-v12.8.0-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v12.5.0/win-x86/node.exe](https://nodejs.org/dist/v12.5.0/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v10.4.0/node-v10.4.0.pkg](https://nodejs.org/dist/v10.4.0/node-v10.4.0.pkg) | ❌ | 12 | 1 |
+| [v10.2.0/node-v10.2.0-headers.tar.gz](https://nodejs.org/dist/v10.2.0/node-v10.2.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v9.6.0/node-v9.6.0-headers.tar.gz](https://nodejs.org/dist/v9.6.0/node-v9.6.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v9.2.1/node-v9.2.1-linux-armv6l.tar.gz](https://nodejs.org/dist/v9.2.1/node-v9.2.1-linux-armv6l.tar.gz) | ❌ | 12 | 1 |
+| [v8.10.0/node-v8.10.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v8.10.0/node-v8.10.0-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz](https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz) | ❌ | 12 | 1 |
+| [v6.12.0/node-v6.12.0.tar.xz](https://nodejs.org/dist/v6.12.0/node-v6.12.0.tar.xz) | ❌ | 12 | 1 |
+| [v6.6.0/node-v6.6.0-linux-armv6l.tar.xz](https://nodejs.org/dist/v6.6.0/node-v6.6.0-linux-armv6l.tar.xz) | ❌ | 12 | 1 |
+| [v4.9.1/node-v4.9.1-sunos-x86.tar.gz](https://nodejs.org/dist/v4.9.1/node-v4.9.1-sunos-x86.tar.gz) | ❌ | 12 | 1 |
+| [v4.5.0/node-v4.5.0-headers.tar.gz](https://nodejs.org/dist/v4.5.0/node-v4.5.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v4.0.0/node-v4.0.0.tar.xz](https://nodejs.org/dist/v4.0.0/node-v4.0.0.tar.xz) | ❌ | 12 | 1 |
+| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 13 |
+| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 13 |
+| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 13 |
+| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 13 |
+| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 13 |
 
 ## 🚨 Last Week
 
 | Release | Status | OK | Errors |
 | --- | --- | --- | --- |
-| [v18.12.1/win-x64/node.exe](https://nodejs.org/dist/v18.12.1/win-x64/node.exe) | ❌ | 11 | 1 |
-| [v16.20.1/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.20.1/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v16.19.1/node-v16.19.1-linux-s390x.tar.gz](https://nodejs.org/dist/v16.19.1/node-v16.19.1-linux-s390x.tar.gz) | ❌ | 11 | 1 |
-| [v16.15.0/node-v16.15.0-linux-s390x.tar.xz](https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-s390x.tar.xz) | ❌ | 11 | 1 |
-| [v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v16.9.1/win-x86/node_pdb.zip](https://nodejs.org/dist/v16.9.1/win-x86/node_pdb.zip) | ❌ | 11 | 1 |
-| [v16.9.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.9.0/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v16.7.0/node-v16.7.0-darwin-x64.tar.gz](https://nodejs.org/dist/v16.7.0/node-v16.7.0-darwin-x64.tar.gz) | ❌ | 11 | 1 |
-| [v16.6.2/node-v16.6.2-linux-arm64.tar.gz](https://nodejs.org/dist/v16.6.2/node-v16.6.2-linux-arm64.tar.gz) | ❌ | 11 | 1 |
-| [v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v15.3.0/node-v15.3.0-linux-s390x.tar.gz](https://nodejs.org/dist/v15.3.0/node-v15.3.0-linux-s390x.tar.gz) | ❌ | 11 | 1 |
-| [v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v14.21.0/win-x64/node_pdb.zip](https://nodejs.org/dist/v14.21.0/win-x64/node_pdb.zip) | ❌ | 11 | 1 |
-| [v14.18.1/node-v14.18.1.pkg](https://nodejs.org/dist/v14.18.1/node-v14.18.1.pkg) | ❌ | 11 | 1 |
-| [v14.10.1/node-v14.10.1-aix-ppc64.tar.gz](https://nodejs.org/dist/v14.10.1/node-v14.10.1-aix-ppc64.tar.gz) | ❌ | 11 | 1 |
-| [v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v13.14.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v13.14.0/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v13.7.0/win-x64/node.exe](https://nodejs.org/dist/v13.7.0/win-x64/node.exe) | ❌ | 11 | 1 |
-| [v12.22.6/node-v12.22.6-x64.msi](https://nodejs.org/dist/v12.22.6/node-v12.22.6-x64.msi) | ❌ | 11 | 1 |
-| [v12.5.0/win-x86/node.exe](https://nodejs.org/dist/v12.5.0/win-x86/node.exe) | ❌ | 11 | 1 |
-| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 12 |
-| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 12 |
-| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 12 |
-| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 12 |
-| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 12 |
+| [v18.17.1/node-v18.17.1-x64.msi](https://nodejs.org/dist/v18.17.1/node-v18.17.1-x64.msi) | ❌ | 12 | 1 |
+| [v18.14.2/win-x86/node.exe](https://nodejs.org/dist/v18.14.2/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v18.12.1/win-x64/node.exe](https://nodejs.org/dist/v18.12.1/win-x64/node.exe) | ❌ | 12 | 1 |
+| [v18.6.0/node-v18.6.0-x64.msi](https://nodejs.org/dist/v18.6.0/node-v18.6.0-x64.msi) | ❌ | 12 | 1 |
+| [v18.3.0/node-v18.3.0-darwin-x64.tar.gz](https://nodejs.org/dist/v18.3.0/node-v18.3.0-darwin-x64.tar.gz) | ❌ | 12 | 1 |
+| [v16.20.1/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.20.1/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v16.19.1/node-v16.19.1-linux-s390x.tar.gz](https://nodejs.org/dist/v16.19.1/node-v16.19.1-linux-s390x.tar.gz) | ❌ | 12 | 1 |
+| [v16.15.0/node-v16.15.0-linux-s390x.tar.xz](https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-s390x.tar.xz) | ❌ | 12 | 1 |
+| [v16.14.2/win-x64/node.lib](https://nodejs.org/dist/v16.14.2/win-x64/node.lib) | ❌ | 12 | 1 |
+| [v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v16.9.1/win-x86/node_pdb.zip](https://nodejs.org/dist/v16.9.1/win-x86/node_pdb.zip) | ❌ | 12 | 1 |
+| [v16.9.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.9.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v16.7.0/node-v16.7.0-darwin-x64.tar.gz](https://nodejs.org/dist/v16.7.0/node-v16.7.0-darwin-x64.tar.gz) | ❌ | 12 | 1 |
+| [v16.6.2/node-v16.6.2-linux-arm64.tar.gz](https://nodejs.org/dist/v16.6.2/node-v16.6.2-linux-arm64.tar.gz) | ❌ | 12 | 1 |
+| [v16.6.0/node-v16.6.0.tar.xz](https://nodejs.org/dist/v16.6.0/node-v16.6.0.tar.xz) | ❌ | 12 | 1 |
+| [v16.3.0/node-v16.3.0-linux-x64.tar.xz](https://nodejs.org/dist/v16.3.0/node-v16.3.0-linux-x64.tar.xz) | ❌ | 12 | 1 |
+| [v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v15.13.0/node-v15.13.0-x64.msi](https://nodejs.org/dist/v15.13.0/node-v15.13.0-x64.msi) | ❌ | 12 | 1 |
+| [v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v15.3.0/node-v15.3.0-linux-s390x.tar.gz](https://nodejs.org/dist/v15.3.0/node-v15.3.0-linux-s390x.tar.gz) | ❌ | 12 | 1 |
+| [v15.2.0/node-v15.2.0-win-x86.zip](https://nodejs.org/dist/v15.2.0/node-v15.2.0-win-x86.zip) | ❌ | 12 | 1 |
+| [v15.0.1/node-v15.0.1-win-x64.7z](https://nodejs.org/dist/v15.0.1/node-v15.0.1-win-x64.7z) | ❌ | 12 | 1 |
+| [v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v14.21.0/win-x64/node_pdb.zip](https://nodejs.org/dist/v14.21.0/win-x64/node_pdb.zip) | ❌ | 12 | 1 |
+| [v14.18.1/node-v14.18.1.pkg](https://nodejs.org/dist/v14.18.1/node-v14.18.1.pkg) | ❌ | 12 | 1 |
+| [v14.17.6/win-x86/node_pdb.7z](https://nodejs.org/dist/v14.17.6/win-x86/node_pdb.7z) | ❌ | 12 | 1 |
+| [v14.13.1/node-v14.13.1-linux-armv7l.tar.gz](https://nodejs.org/dist/v14.13.1/node-v14.13.1-linux-armv7l.tar.gz) | ❌ | 12 | 1 |
+| [v14.11.0/node-v14.11.0-darwin-x64.tar.xz](https://nodejs.org/dist/v14.11.0/node-v14.11.0-darwin-x64.tar.xz) | ❌ | 12 | 1 |
+| [v14.10.1/node-v14.10.1-aix-ppc64.tar.gz](https://nodejs.org/dist/v14.10.1/node-v14.10.1-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v13.14.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v13.14.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v13.7.0/win-x64/node.exe](https://nodejs.org/dist/v13.7.0/win-x64/node.exe) | ❌ | 12 | 1 |
+| [v12.22.6/node-v12.22.6-x64.msi](https://nodejs.org/dist/v12.22.6/node-v12.22.6-x64.msi) | ❌ | 12 | 1 |
+| [v12.22.6/win-x86/node.exe](https://nodejs.org/dist/v12.22.6/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz](https://nodejs.org/dist/v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v12.11.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v12.11.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v12.10.0/node-v12.10.0-win-x64.7z](https://nodejs.org/dist/v12.10.0/node-v12.10.0-win-x64.7z) | ❌ | 12 | 1 |
+| [v12.8.0/node-v12.8.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v12.8.0/node-v12.8.0-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v12.5.0/win-x86/node.exe](https://nodejs.org/dist/v12.5.0/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v10.4.0/node-v10.4.0.pkg](https://nodejs.org/dist/v10.4.0/node-v10.4.0.pkg) | ❌ | 12 | 1 |
+| [v10.2.0/node-v10.2.0-headers.tar.gz](https://nodejs.org/dist/v10.2.0/node-v10.2.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v9.6.0/node-v9.6.0-headers.tar.gz](https://nodejs.org/dist/v9.6.0/node-v9.6.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v9.2.1/node-v9.2.1-linux-armv6l.tar.gz](https://nodejs.org/dist/v9.2.1/node-v9.2.1-linux-armv6l.tar.gz) | ❌ | 12 | 1 |
+| [v8.10.0/node-v8.10.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v8.10.0/node-v8.10.0-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz](https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz) | ❌ | 12 | 1 |
+| [v6.12.0/node-v6.12.0.tar.xz](https://nodejs.org/dist/v6.12.0/node-v6.12.0.tar.xz) | ❌ | 12 | 1 |
+| [v6.6.0/node-v6.6.0-linux-armv6l.tar.xz](https://nodejs.org/dist/v6.6.0/node-v6.6.0-linux-armv6l.tar.xz) | ❌ | 12 | 1 |
+| [v4.9.1/node-v4.9.1-sunos-x86.tar.gz](https://nodejs.org/dist/v4.9.1/node-v4.9.1-sunos-x86.tar.gz) | ❌ | 12 | 1 |
+| [v4.5.0/node-v4.5.0-headers.tar.gz](https://nodejs.org/dist/v4.5.0/node-v4.5.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v4.0.0/node-v4.0.0.tar.xz](https://nodejs.org/dist/v4.0.0/node-v4.0.0.tar.xz) | ❌ | 12 | 1 |
+| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 13 |
+| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 13 |
+| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 13 |
+| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 13 |
+| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 13 |
 
 ## 🚨 Last Month
 
 | Release | Status | OK | Errors |
 | --- | --- | --- | --- |
-| [v18.12.1/win-x64/node.exe](https://nodejs.org/dist/v18.12.1/win-x64/node.exe) | ❌ | 11 | 1 |
-| [v16.20.1/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.20.1/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v16.19.1/node-v16.19.1-linux-s390x.tar.gz](https://nodejs.org/dist/v16.19.1/node-v16.19.1-linux-s390x.tar.gz) | ❌ | 11 | 1 |
-| [v16.15.0/node-v16.15.0-linux-s390x.tar.xz](https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-s390x.tar.xz) | ❌ | 11 | 1 |
-| [v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v16.9.1/win-x86/node_pdb.zip](https://nodejs.org/dist/v16.9.1/win-x86/node_pdb.zip) | ❌ | 11 | 1 |
-| [v16.9.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.9.0/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v16.7.0/node-v16.7.0-darwin-x64.tar.gz](https://nodejs.org/dist/v16.7.0/node-v16.7.0-darwin-x64.tar.gz) | ❌ | 11 | 1 |
-| [v16.6.2/node-v16.6.2-linux-arm64.tar.gz](https://nodejs.org/dist/v16.6.2/node-v16.6.2-linux-arm64.tar.gz) | ❌ | 11 | 1 |
-| [v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v15.3.0/node-v15.3.0-linux-s390x.tar.gz](https://nodejs.org/dist/v15.3.0/node-v15.3.0-linux-s390x.tar.gz) | ❌ | 11 | 1 |
-| [v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v14.21.0/win-x64/node_pdb.zip](https://nodejs.org/dist/v14.21.0/win-x64/node_pdb.zip) | ❌ | 11 | 1 |
-| [v14.18.1/node-v14.18.1.pkg](https://nodejs.org/dist/v14.18.1/node-v14.18.1.pkg) | ❌ | 11 | 1 |
-| [v14.10.1/node-v14.10.1-aix-ppc64.tar.gz](https://nodejs.org/dist/v14.10.1/node-v14.10.1-aix-ppc64.tar.gz) | ❌ | 11 | 1 |
-| [v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz) | ❌ | 11 | 1 |
-| [v13.14.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v13.14.0/win-x64/node_pdb.7z) | ❌ | 11 | 1 |
-| [v13.7.0/win-x64/node.exe](https://nodejs.org/dist/v13.7.0/win-x64/node.exe) | ❌ | 11 | 1 |
-| [v12.22.6/node-v12.22.6-x64.msi](https://nodejs.org/dist/v12.22.6/node-v12.22.6-x64.msi) | ❌ | 11 | 1 |
-| [v12.5.0/win-x86/node.exe](https://nodejs.org/dist/v12.5.0/win-x86/node.exe) | ❌ | 11 | 1 |
-| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 12 |
-| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 12 |
-| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 12 |
-| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 12 |
-| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 12 |
-| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 12 |
-| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 12 |
+| [v18.17.1/node-v18.17.1-x64.msi](https://nodejs.org/dist/v18.17.1/node-v18.17.1-x64.msi) | ❌ | 12 | 1 |
+| [v18.14.2/win-x86/node.exe](https://nodejs.org/dist/v18.14.2/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v18.12.1/win-x64/node.exe](https://nodejs.org/dist/v18.12.1/win-x64/node.exe) | ❌ | 12 | 1 |
+| [v18.6.0/node-v18.6.0-x64.msi](https://nodejs.org/dist/v18.6.0/node-v18.6.0-x64.msi) | ❌ | 12 | 1 |
+| [v18.3.0/node-v18.3.0-darwin-x64.tar.gz](https://nodejs.org/dist/v18.3.0/node-v18.3.0-darwin-x64.tar.gz) | ❌ | 12 | 1 |
+| [v16.20.1/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.20.1/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v16.19.1/node-v16.19.1-linux-s390x.tar.gz](https://nodejs.org/dist/v16.19.1/node-v16.19.1-linux-s390x.tar.gz) | ❌ | 12 | 1 |
+| [v16.15.0/node-v16.15.0-linux-s390x.tar.xz](https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-s390x.tar.xz) | ❌ | 12 | 1 |
+| [v16.14.2/win-x64/node.lib](https://nodejs.org/dist/v16.14.2/win-x64/node.lib) | ❌ | 12 | 1 |
+| [v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v16.9.1/win-x86/node_pdb.zip](https://nodejs.org/dist/v16.9.1/win-x86/node_pdb.zip) | ❌ | 12 | 1 |
+| [v16.9.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v16.9.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v16.7.0/node-v16.7.0-darwin-x64.tar.gz](https://nodejs.org/dist/v16.7.0/node-v16.7.0-darwin-x64.tar.gz) | ❌ | 12 | 1 |
+| [v16.6.2/node-v16.6.2-linux-arm64.tar.gz](https://nodejs.org/dist/v16.6.2/node-v16.6.2-linux-arm64.tar.gz) | ❌ | 12 | 1 |
+| [v16.6.0/node-v16.6.0.tar.xz](https://nodejs.org/dist/v16.6.0/node-v16.6.0.tar.xz) | ❌ | 12 | 1 |
+| [v16.3.0/node-v16.3.0-linux-x64.tar.xz](https://nodejs.org/dist/v16.3.0/node-v16.3.0-linux-x64.tar.xz) | ❌ | 12 | 1 |
+| [v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.13.0/node-v15.13.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v15.13.0/node-v15.13.0-x64.msi](https://nodejs.org/dist/v15.13.0/node-v15.13.0-x64.msi) | ❌ | 12 | 1 |
+| [v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v15.3.0/node-v15.3.0-linux-s390x.tar.gz](https://nodejs.org/dist/v15.3.0/node-v15.3.0-linux-s390x.tar.gz) | ❌ | 12 | 1 |
+| [v15.2.0/node-v15.2.0-win-x86.zip](https://nodejs.org/dist/v15.2.0/node-v15.2.0-win-x86.zip) | ❌ | 12 | 1 |
+| [v15.0.1/node-v15.0.1-win-x64.7z](https://nodejs.org/dist/v15.0.1/node-v15.0.1-win-x64.7z) | ❌ | 12 | 1 |
+| [v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v15.0.0/node-v15.0.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v14.21.0/win-x64/node_pdb.zip](https://nodejs.org/dist/v14.21.0/win-x64/node_pdb.zip) | ❌ | 12 | 1 |
+| [v14.18.1/node-v14.18.1.pkg](https://nodejs.org/dist/v14.18.1/node-v14.18.1.pkg) | ❌ | 12 | 1 |
+| [v14.17.6/win-x86/node_pdb.7z](https://nodejs.org/dist/v14.17.6/win-x86/node_pdb.7z) | ❌ | 12 | 1 |
+| [v14.13.1/node-v14.13.1-linux-armv7l.tar.gz](https://nodejs.org/dist/v14.13.1/node-v14.13.1-linux-armv7l.tar.gz) | ❌ | 12 | 1 |
+| [v14.11.0/node-v14.11.0-darwin-x64.tar.xz](https://nodejs.org/dist/v14.11.0/node-v14.11.0-darwin-x64.tar.xz) | ❌ | 12 | 1 |
+| [v14.10.1/node-v14.10.1-aix-ppc64.tar.gz](https://nodejs.org/dist/v14.10.1/node-v14.10.1-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.3.0/node-v14.3.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz](https://nodejs.org/dist/v14.1.0/node-v14.1.0-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v13.14.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v13.14.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v13.7.0/win-x64/node.exe](https://nodejs.org/dist/v13.7.0/win-x64/node.exe) | ❌ | 12 | 1 |
+| [v12.22.6/node-v12.22.6-x64.msi](https://nodejs.org/dist/v12.22.6/node-v12.22.6-x64.msi) | ❌ | 12 | 1 |
+| [v12.22.6/win-x86/node.exe](https://nodejs.org/dist/v12.22.6/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz](https://nodejs.org/dist/v12.22.2/node-v12.22.2-linux-ppc64le.tar.gz) | ❌ | 12 | 1 |
+| [v12.11.0/win-x64/node_pdb.7z](https://nodejs.org/dist/v12.11.0/win-x64/node_pdb.7z) | ❌ | 12 | 1 |
+| [v12.10.0/node-v12.10.0-win-x64.7z](https://nodejs.org/dist/v12.10.0/node-v12.10.0-win-x64.7z) | ❌ | 12 | 1 |
+| [v12.8.0/node-v12.8.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v12.8.0/node-v12.8.0-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v12.5.0/win-x86/node.exe](https://nodejs.org/dist/v12.5.0/win-x86/node.exe) | ❌ | 12 | 1 |
+| [v10.4.0/node-v10.4.0.pkg](https://nodejs.org/dist/v10.4.0/node-v10.4.0.pkg) | ❌ | 12 | 1 |
+| [v10.2.0/node-v10.2.0-headers.tar.gz](https://nodejs.org/dist/v10.2.0/node-v10.2.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v9.6.0/node-v9.6.0-headers.tar.gz](https://nodejs.org/dist/v9.6.0/node-v9.6.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v9.2.1/node-v9.2.1-linux-armv6l.tar.gz](https://nodejs.org/dist/v9.2.1/node-v9.2.1-linux-armv6l.tar.gz) | ❌ | 12 | 1 |
+| [v8.10.0/node-v8.10.0-aix-ppc64.tar.gz](https://nodejs.org/dist/v8.10.0/node-v8.10.0-aix-ppc64.tar.gz) | ❌ | 12 | 1 |
+| [v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz](https://nodejs.org/dist/v7.0.0/node-v7.0.0-linux-ppc64le.tar.xz) | ❌ | 12 | 1 |
+| [v6.12.0/node-v6.12.0.tar.xz](https://nodejs.org/dist/v6.12.0/node-v6.12.0.tar.xz) | ❌ | 12 | 1 |
+| [v6.6.0/node-v6.6.0-linux-armv6l.tar.xz](https://nodejs.org/dist/v6.6.0/node-v6.6.0-linux-armv6l.tar.xz) | ❌ | 12 | 1 |
+| [v4.9.1/node-v4.9.1-sunos-x86.tar.gz](https://nodejs.org/dist/v4.9.1/node-v4.9.1-sunos-x86.tar.gz) | ❌ | 12 | 1 |
+| [v4.5.0/node-v4.5.0-headers.tar.gz](https://nodejs.org/dist/v4.5.0/node-v4.5.0-headers.tar.gz) | ❌ | 12 | 1 |
+| [v4.0.0/node-v4.0.0.tar.xz](https://nodejs.org/dist/v4.0.0/node-v4.0.0.tar.xz) | ❌ | 12 | 1 |
+| [v0.12.0/genccode.exe](https://nodejs.org/dist/v0.12.0/genccode.exe) | ❌ | 0 | 13 |
+| [v0.12.0/genccode.pdb](https://nodejs.org/dist/v0.12.0/genccode.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/genrb.exe](https://nodejs.org/dist/v0.12.0/genrb.exe) | ❌ | 0 | 13 |
+| [v0.12.0/genrb.pdb](https://nodejs.org/dist/v0.12.0/genrb.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/iculslocs.exe](https://nodejs.org/dist/v0.12.0/iculslocs.exe) | ❌ | 0 | 13 |
+| [v0.12.0/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/iculslocs.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/icupkg.exe](https://nodejs.org/dist/v0.12.0/icupkg.exe) | ❌ | 0 | 13 |
+| [v0.12.0/icupkg.pdb](https://nodejs.org/dist/v0.12.0/icupkg.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genccode.exe](https://nodejs.org/dist/v0.12.0/x64/genccode.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genccode.pdb](https://nodejs.org/dist/v0.12.0/x64/genccode.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genrb.exe](https://nodejs.org/dist/v0.12.0/x64/genrb.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/genrb.pdb](https://nodejs.org/dist/v0.12.0/x64/genrb.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/iculslocs.exe](https://nodejs.org/dist/v0.12.0/x64/iculslocs.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/iculslocs.pdb](https://nodejs.org/dist/v0.12.0/x64/iculslocs.pdb) | ❌ | 0 | 13 |
+| [v0.12.0/x64/icupkg.exe](https://nodejs.org/dist/v0.12.0/x64/icupkg.exe) | ❌ | 0 | 13 |
+| [v0.12.0/x64/icupkg.pdb](https://nodejs.org/dist/v0.12.0/x64/icupkg.pdb) | ❌ | 0 | 13 |
 
