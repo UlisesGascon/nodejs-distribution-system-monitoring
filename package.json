@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-distribution-system-monitoring",
+  "version": "1.0.0",
+  "description": "POC for monitoring Node.js distribution system",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "collect:releases": "node scripts/collect-releases.js",
+    "check:availability": "node scripts/check-availability.js",
+    "generate:metrics": "node scripts/generate-metrics.js",
+    "generate:report": "node scripts/generate-report.js",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "author": "Ulises Gascon",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
+}
