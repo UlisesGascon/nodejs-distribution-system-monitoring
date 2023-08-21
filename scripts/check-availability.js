@@ -1,6 +1,6 @@
 import { getReleases, chunkArray, getConfig, getUrlHeaders, saveResults } from '../utils/index.js'
 
-const { parallelHttpRequests } = getConfig()
+const { parallelHttpRequests, userAgent } = getConfig()
 const releaseUrls = getReleases()
 
 const chunks = chunkArray(releaseUrls, parallelHttpRequests)
@@ -11,7 +11,7 @@ const timestamp = Date.now()
 const output = {}
 for (const chunk of chunks) {
   await Promise.all(chunk.map(async url => {
-    const result = await getUrlHeaders(url)
+    const result = await getUrlHeaders(url, userAgent)
     output[url] = result
   }))
   console.log(`total processed: ${Object.keys(output).length} / ${releaseUrls.length}`)
