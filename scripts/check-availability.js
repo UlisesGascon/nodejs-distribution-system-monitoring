@@ -1,9 +1,9 @@
 import * as core from '@actions/core'
-import { getReleases, chunkArray, getConfig, getUrlHeaders, saveResults } from '../utils/index.js'
+import { getReleasesUrls, chunkArray, getConfig, getUrlHeaders, saveResults } from '../utils/index.js'
 
 core.notice('Checking availability...')
 const { parallelHttpRequests, userAgent } = getConfig()
-const releaseUrls = getReleases()
+const releaseUrls = getReleasesUrls()
 
 const output = {}
 const timestamp = Date.now()
