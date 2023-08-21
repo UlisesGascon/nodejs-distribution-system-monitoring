@@ -1,9 +1,11 @@
 import exec from '@actions/exec'
 import * as core from '@actions/core'
+import { HttpClient } from '@actions/http-client'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { readdir } from 'node:fs/promises'
-import https from 'node:https'
 import { join } from 'node:path'
+
+const httpAgent = new HttpClient('node-dist-health')
 
 export async function getAllResults () {
   const resultsFolder = join(process.cwd(), 'results')
@@ -83,19 +85,7 @@ export function overwriteReleaseUrls (urls) {
 }
 
 function downloadFile (url) {
-  return new Promise((resolve, reject) => {
-    https.get(url, (resp) => {
-      let data = ''
-
-      resp.on('data', (chunk) => {
-        data += chunk
-      })
-
-      resp.on('end', () => {
-        resolve(data)
-      })
-    }).on('error', reject)
-  })
+  return httpAgent.get(url).then(res => res.readBody())
 }
 
 export async function downloadReleases () {
