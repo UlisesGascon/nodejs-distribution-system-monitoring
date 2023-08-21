@@ -4,6 +4,7 @@ import { HttpClient } from '@actions/http-client'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { readdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
+import { createHash } from 'node:crypto'
 
 const httpAgent = new HttpClient('node-dist-health')
 
@@ -56,12 +57,14 @@ const releasesUrlsFile = join(process.cwd(), 'releases_urls.json')
 const metricsFile = join(process.cwd(), 'metrics.json')
 const getReportFilePath = domain => join(process.cwd(), `report-${domain}.md`)
 const releasesFile = join(process.cwd(), 'releases.json')
+const checksumsFile = join(process.cwd(), 'checksums.json')
 
 const readJsonFile = (file) => () => JSON.parse(readFileSync(file, 'utf8'))
 export const getConfig = readJsonFile(configFile)
 export const getReleasesUrls = readJsonFile(releasesUrlsFile)
 export const getReleases = readJsonFile(releasesFile)
 export const getMetrics = readJsonFile(metricsFile)
+export const getChecksums = readJsonFile(checksumsFile)
 
 export function saveMetrics (metrics) {
   writeFileSync(metricsFile, JSON.stringify(metrics, null, 2))
@@ -73,6 +76,58 @@ export function saveResults (results, timestamp) {
 
 export async function saveReports (reports) {
   return Promise.all(Object.keys(reports).map(async domain => writeFile(getReportFilePath(domain), reports[domain])))
+}
+
+function sha256(content) {  
+  return createHash('sha256').update(content).digest('hex')
+}
+
+export function updateChecksums (storedChecksums, checksums) {
+  const extendChecksums = {}
+  Object.keys(checksums).forEach(domain => {
+    extendChecksums[domain] = Object.assign({}, checksums[domain], storedChecksums[domain])
+  })
+  return extendChecksums
+}
+
+
+
+export async function generateFilesChecksums (releases, parallelRequests) {
+  const checksums = {}
+  for (const domain of Object.keys(releases)) {
+    checksums[domain] = {}
+    const chunks = chunkArray(releases[domain], parallelRequests)
+    for (const chunk of chunks) {
+      await Promise.all(chunk.map(async release => {
+        core.debug(`Generating checksums for ${domain}@${release.version}`)
+        if(release.version === 'v0.1.14') {
+          core.info(`Skipping ${release.version}, see: https://github.com/nodejs/build/issues/3468`)
+          return
+        }
+        const shasumReleaseUrl = `https://${domain}.org/dist/${release.version}/SHASUMS256.txt`
+        const shasumReleaseAscUrl = `https://${domain}.org/dist/${release.version}/SHASUMS256.txt.asc`
+        const shasumReleaseSigUrl = `https://${domain}.org/dist/${release.version}/SHASUMS256.txt.sig`
+        const [shasumRelease, shasumReleaseAsc, shasumReleaseSig] = await Promise.all([
+          downloadFile(shasumReleaseUrl),
+          downloadFile(shasumReleaseAscUrl),
+          downloadFile(shasumReleaseSigUrl)
+        ])
+        checksums[domain][shasumReleaseUrl] = sha256(shasumRelease)
+        checksums[domain][shasumReleaseAscUrl] = sha256(shasumReleaseAsc)
+        checksums[domain][shasumReleaseSigUrl] = sha256(shasumReleaseSig)
+        
+        // Split the shasum file into lines, collect the file names, filter out empty lines, and generate the url with the file name
+        shasumRelease.split('\n')
+          .forEach(line => {
+            if (!line) return
+            const [hash, filename] = line.split('  ')
+            const url = `https://${domain}.org/dist/${release.version}/${filename}`
+            checksums[domain][url] = hash
+          })
+      }))
+    }
+  }
+  return checksums
 }
 
 export async function generateReleasesUrls (releases, parallelRequests) {
@@ -99,6 +154,10 @@ export function overwriteReleases (releases) {
 
 export function overwriteReleaseUrls (urls) {
   writeFileSync(releasesUrlsFile, JSON.stringify(urls, null, 2))
+}
+
+export function overwriteChecksums (checksums) {
+  writeFileSync(checksumsFile, JSON.stringify(checksums, null, 2))
 }
 
 function downloadFile (url) {
