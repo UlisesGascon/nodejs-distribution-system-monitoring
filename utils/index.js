@@ -21,14 +21,21 @@ export async function getAllResults () {
   return results
 }
 
+// if 200 OK return 1, else return 0
 export async function getUrlHeaders (url, userAgent) {
-  const { stdout } = await exec.getExecOutput('curl', ['-A', `${userAgent}`, '--head', `${url}`], { silent: true })
-  if (!stdout.includes('HTTP/2 200')) {
-    core.warning(`NOT 200 for ${url}`)
-    core.info(stdout)
+  try {
+    const { stdout } = await exec.getExecOutput('curl', ['-A', `${userAgent}`, '--head', `${url}`], { silent: true })
+    if (!stdout.includes('HTTP/2 200')) {
+      core.warning(`NOT 200 status code for ${url}`)
+      core.info(stdout)
+      return 0
+    }
+    return 1
+  } catch (error) {
+    core.warning(`Error connecting to ${url}`)
+    core.info(error)
+    return 0
   }
-  // if 200 OK return 1, else return 0
-  return Number(stdout.includes('HTTP/2 200'))
 }
 
 // @see: https://github.com/UlisesGascon/micro-utilities/blob/main/packages/array-to-chunks/src/index.ts
