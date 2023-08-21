@@ -78,7 +78,7 @@ export async function saveReports (reports) {
   return Promise.all(Object.keys(reports).map(async domain => writeFile(getReportFilePath(domain), reports[domain])))
 }
 
-function sha256(content) {  
+function sha256 (content) {
   return createHash('sha256').update(content).digest('hex')
 }
 
@@ -90,8 +90,6 @@ export function updateChecksums (storedChecksums, checksums) {
   return extendChecksums
 }
 
-
-
 export async function generateFilesChecksums (releases, parallelRequests) {
   const checksums = {}
   for (const domain of Object.keys(releases)) {
@@ -100,7 +98,7 @@ export async function generateFilesChecksums (releases, parallelRequests) {
     for (const chunk of chunks) {
       await Promise.all(chunk.map(async release => {
         core.debug(`Generating checksums for ${domain}@${release.version}`)
-        if(release.version === 'v0.1.14') {
+        if (release.version === 'v0.1.14') {
           core.info(`Skipping ${release.version}, see: https://github.com/nodejs/build/issues/3468`)
           return
         }
@@ -115,7 +113,7 @@ export async function generateFilesChecksums (releases, parallelRequests) {
         checksums[domain][shasumReleaseUrl] = sha256(shasumRelease)
         checksums[domain][shasumReleaseAscUrl] = sha256(shasumReleaseAsc)
         checksums[domain][shasumReleaseSigUrl] = sha256(shasumReleaseSig)
-        
+
         // Split the shasum file into lines, collect the file names, filter out empty lines, and generate the url with the file name
         shasumRelease.split('\n')
           .forEach(line => {

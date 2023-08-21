@@ -9,10 +9,8 @@ core.info(`Found ${Object.keys(releases).reduce((acc, c) => releases[acc].length
 const checksums = await generateFilesChecksums(releases, parallelHttpRequests)
 const storedChecksums = getChecksums()
 
-core.info(`Adding new checksums to previous results...`)
+core.info('Adding new checksums to previous results...')
 const extendChecksums = updateChecksums(storedChecksums, checksums)
 
 core.info('Overwriting checksums file...')
 overwriteChecksums(extendChecksums)
-
-
