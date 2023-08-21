@@ -2,7 +2,6 @@ import * as core from '@actions/core'
 import { getReleases, getAllResults, saveMetrics } from '../utils/index.js'
 
 const releaseUrls = getReleases()
-
 const timestamp = Date.now()
 const dayInMs = 24 * 60 * 60 * 1000
 const ts1dayAgo = timestamp - dayInMs
@@ -10,29 +9,27 @@ const ts7daysAgo = timestamp - 7 * dayInMs
 const ts30daysAgo = timestamp - 30 * dayInMs
 const reportData = {}
 
-releaseUrls.forEach(url => {
-  reportData[url] = {
-    current: 0,
-    lastDay: {
-      ok: 0,
-      error: 0,
-      requests: 0
-    },
-    lastWeek: {
-      ok: 0,
-      error: 0,
-      requests: 0
-    },
-    lastMonth: {
-      ok: 0,
-      error: 0,
-      requests: 0
-    },
-    total: {
-      ok: 0,
-      error: 0,
-      requests: 0
-    }
+const generateURLReportStructure = () => ({
+  current: 0,
+  lastDay: {
+    ok: 0,
+    error: 0,
+    requests: 0
+  },
+  lastWeek: {
+    ok: 0,
+    error: 0,
+    requests: 0
+  },
+  lastMonth: {
+    ok: 0,
+    error: 0,
+    requests: 0
+  },
+  total: {
+    ok: 0,
+    error: 0,
+    requests: 0
   }
 })
 
@@ -44,42 +41,47 @@ core.info(`Total Results to process: ${Object.keys(results).length}`)
 const timestamps = Object.keys(results).sort().reverse()
 
 timestamps.forEach((ts, i) => {
-  const data = results[ts]
-  const urls = Object.keys(data)
-  urls.forEach(url => {
-    // skip urls that are not in releases.json
-    if (!releaseUrls.includes(url)) {
-      return
-    }
+  Object.keys(results[ts]).forEach((domain) => {
+    reportData[domain] = {}
 
-    const response = data[url]
-    const isOk = response === 1
-    const isLastDay = parseInt(ts) > ts1dayAgo
-    const isLastWeek = parseInt(ts) > ts7daysAgo
-    const isLastMonth = parseInt(ts) > ts30daysAgo
+    const data = results[ts][domain]
+    const urls = Object.keys(data)
+    urls.forEach((url) => {
+      reportData[domain][url] = generateURLReportStructure()
+      // skip urls that are not in releases.json
+      if (!releaseUrls[domain].includes(url)) {
+        return
+      }
 
-    // update the current value only once
-    if (i === 0) {
-      reportData[url].current = response
-    }
+      const response = data[url]
+      const isOk = response === 1
+      const isLastDay = parseInt(ts) > ts1dayAgo
+      const isLastWeek = parseInt(ts) > ts7daysAgo
+      const isLastMonth = parseInt(ts) > ts30daysAgo
 
-    reportData[url].total.requests++
-    reportData[url].total[isOk ? 'ok' : 'error']++
+      // update the current value only once
+      if (i === 0) {
+        reportData[domain][url].current = response
+      }
 
-    if (isLastDay) {
-      reportData[url].lastDay.requests++
-      reportData[url].lastDay[isOk ? 'ok' : 'error']++
-    }
+      reportData[domain][url].total.requests++
+      reportData[domain][url].total[isOk ? 'ok' : 'error']++
 
-    if (isLastWeek) {
-      reportData[url].lastWeek.requests++
-      reportData[url].lastWeek[isOk ? 'ok' : 'error']++
-    }
+      if (isLastDay) {
+        reportData[domain][url].lastDay.requests++
+        reportData[domain][url].lastDay[isOk ? 'ok' : 'error']++
+      }
 
-    if (isLastMonth) {
-      reportData[url].lastMonth.requests++
-      reportData[url].lastMonth[isOk ? 'ok' : 'error']++
-    }
+      if (isLastWeek) {
+        reportData[domain][url].lastWeek.requests++
+        reportData[domain][url].lastWeek[isOk ? 'ok' : 'error']++
+      }
+
+      if (isLastMonth) {
+        reportData[domain][url].lastMonth.requests++
+        reportData[domain][url].lastMonth[isOk ? 'ok' : 'error']++
+      }
+    })
   })
 })
 
