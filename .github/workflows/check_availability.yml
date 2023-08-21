@@ -3,7 +3,7 @@ on:
     schedule:
         - cron: '0 * * * *'
 
-name: 📦 Check dist server
+name: 📦 Check Availability
 
 permissions:
   contents: write
@@ -19,22 +19,21 @@ jobs:
         node-version: '20.5.1'
         cache: 'npm'
 
+    - name: Install dependencies
+      run: npm ci
+
     - name: Collect Releases
       run: npm run collect:releases
-
 
     - name: Check Availability
       run: npm run check:availability
 
-
     - name: Generate Metrics
       run: npm run generate:metrics
         
-
     - name: Generate Report
       run: npm run generate:report
 
-      
     - name: Commit and push changes
       uses: devops-infra/action-commit-push@5c032a8e0e84830905895b652bc1766255145cf4 # v1.0.0
       with:
