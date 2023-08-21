@@ -1,4 +1,6 @@
+import * as core from '@actions/core'
 import { getReleases, getAllResults, saveMetrics } from '../utils/index.js'
+
 const releaseUrls = getReleases()
 
 const timestamp = Date.now()
@@ -34,8 +36,9 @@ releaseUrls.forEach(url => {
   }
 })
 
+core.notice('Metrics data is being collected...')
 const results = await getAllResults()
-console.log(`Total Results to process: ${Object.keys(results).length}`)
+core.info(`Total Results to process: ${Object.keys(results).length}`)
 
 // sort timestamps in reverse order (newest first)
 const timestamps = Object.keys(results).sort().reverse()
@@ -80,6 +83,6 @@ timestamps.forEach((ts, i) => {
   })
 })
 
-console.log('Metrics data is ready')
+core.info('Metrics data is ready')
 
 saveMetrics(reportData)

@@ -1,6 +1,7 @@
+import * as core from '@actions/core'
 import { getMetrics, generateReport, saveReport } from '../utils/index.js'
 
-console.log('Generating report...')
+core.notice('Generating report...')
 const metrics = getMetrics()
 const reportData = generateReport(metrics)
 saveReport(reportData)

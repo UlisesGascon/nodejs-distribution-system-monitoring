@@ -1,8 +1,9 @@
+import exec from '@actions/exec'
+import * as core from '@actions/core'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { readdir } from 'node:fs/promises'
 import https from 'node:https'
 import { join } from 'node:path'
-import exec from '@actions/exec'
 
 export async function getAllResults () {
   const resultsFolder = join(process.cwd(), 'results')
@@ -21,8 +22,8 @@ export async function getAllResults () {
 export async function getUrlHeaders (url, userAgent) {
   const { stdout } = await exec.getExecOutput('curl', ['-A', `${userAgent}`, '--head', `${url}`], { silent: true })
   if (!stdout.includes('HTTP/2 200')) {
-    console.log(`NOT 200 for ${url}`)
-    console.log(stdout)
+    core.warning(`NOT 200 for ${url}`)
+    core.info(stdout)
   }
   // if 200 OK return 1, else return 0
   return Number(stdout.includes('HTTP/2 200'))
