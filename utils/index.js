@@ -55,10 +55,12 @@ const configFile = join(process.cwd(), 'config.json')
 const releasesUrlsFile = join(process.cwd(), 'releases_urls.json')
 const metricsFile = join(process.cwd(), 'metrics.json')
 const getReportFilePath = domain => join(process.cwd(), `report-${domain}.md`)
+const releasesFile = join(process.cwd(), 'releases.json')
 
 const readJsonFile = (file) => () => JSON.parse(readFileSync(file, 'utf8'))
 export const getConfig = readJsonFile(configFile)
 export const getReleasesUrls = readJsonFile(releasesUrlsFile)
+export const getReleases = readJsonFile(releasesFile)
 export const getMetrics = readJsonFile(metricsFile)
 
 export function saveMetrics (metrics) {
@@ -89,6 +91,10 @@ export async function generateReleasesUrls (releases, parallelRequests) {
     urlsCollected[domain] = urls.flat(2)
   }
   return urlsCollected
+}
+
+export function overwriteReleases (releases) {
+  writeFileSync(releasesFile, JSON.stringify(releases, null, 2))
 }
 
 export function overwriteReleaseUrls (urls) {
