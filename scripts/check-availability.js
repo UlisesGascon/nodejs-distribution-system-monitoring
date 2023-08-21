@@ -5,18 +5,20 @@ core.notice('Checking availability...')
 const { parallelHttpRequests, userAgent } = getConfig()
 const releaseUrls = getReleases()
 
-const chunks = chunkArray(releaseUrls, parallelHttpRequests)
-core.info(`${releaseUrls.length} release urls divided into ${chunks.length} chunks`)
-
+const output = {}
 const timestamp = Date.now()
 
-const output = {}
-for (const chunk of chunks) {
-  await Promise.all(chunk.map(async url => {
-    const result = await getUrlHeaders(url, userAgent)
-    output[url] = result
-  }))
-  core.info(`total processed: ${Object.keys(output).length} / ${releaseUrls.length}`)
+for (const domain of Object.keys(releaseUrls)) {
+  const chunks = chunkArray(releaseUrls[domain], parallelHttpRequests)
+  core.info(`${releaseUrls[domain].length} release urls for ${domain} divided into ${chunks.length} chunks`)
+  output[domain] = {}
+  for (const chunk of chunks) {
+    await Promise.all(chunk.map(async url => {
+      const result = await getUrlHeaders(url, userAgent)
+      output[domain][url] = result
+    }))
+    core.info(`total processed for ${domain}: ${Object.keys(output[domain]).length} / ${releaseUrls[domain].length}`)
+  }
 }
 
 saveResults(output, timestamp)

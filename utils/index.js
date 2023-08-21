@@ -2,7 +2,7 @@ import exec from '@actions/exec'
 import * as core from '@actions/core'
 import { HttpClient } from '@actions/http-client'
 import { readFileSync, writeFileSync } from 'node:fs'
-import { readdir } from 'node:fs/promises'
+import { readdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 const httpAgent = new HttpClient('node-dist-health')
@@ -54,7 +54,7 @@ export function chunkArray (arr, chunkSize) {
 const configFile = join(process.cwd(), 'config.json')
 const releasesFile = join(process.cwd(), 'releases.json')
 const metricsFile = join(process.cwd(), 'metrics.json')
-const reportFile = join(process.cwd(), 'report.md')
+const getReportFilePath = domain => join(process.cwd(), `report-${domain}.md`)
 
 const readJsonFile = (file) => () => JSON.parse(readFileSync(file, 'utf8'))
 export const getConfig = readJsonFile(configFile)
@@ -69,22 +69,26 @@ export function saveResults (results, timestamp) {
   writeFileSync(join(process.cwd(), `results/${timestamp}.json`), JSON.stringify(results, null, 2))
 }
 
-export function saveReport (report) {
-  writeFileSync(reportFile, report)
+export async function saveReports (reports) {
+  return Promise.all(Object.keys(reports).map(async domain => writeFile(getReportFilePath(domain), reports[domain])))
 }
 
 export async function generateReleasesUrls (releases, parallelRequests) {
-  const chunks = chunkArray(releases, parallelRequests)
-  const urls = await Promise.all(chunks.map(chunk => Promise.all(chunk.map(async release => {
-    const shasumUrl = `https://nodejs.org/dist/${release.version}/SHASUMS256.txt`
-    const shasum = await downloadFile(shasumUrl)
-    // Split the shasum file into lines, collect the file names, filter out empty lines, and generate the url with the file name
-    return shasum.split('\n')
-      .map(line => line.split('  ')[1])
-      .filter(line => line)
-      .map(line => `https://nodejs.org/dist/${release.version}/${line}`)
-  }))))
-  return urls.flat(2)
+  const urlsCollected = {}
+  for (const domain of Object.keys(releases)) {
+    const chunks = chunkArray(releases[domain], parallelRequests)
+    const urls = await Promise.all(chunks.map(chunk => Promise.all(chunk.map(async release => {
+      const shasumUrl = `https://${domain}.org/dist/${release.version}/SHASUMS256.txt`
+      const shasum = await downloadFile(shasumUrl)
+      // Split the shasum file into lines, collect the file names, filter out empty lines, and generate the url with the file name
+      return shasum.split('\n')
+        .map(line => line.split('  ')[1])
+        .filter(line => line)
+        .map(line => `https://${domain}.org/dist/${release.version}/${line}`)
+    }))))
+    urlsCollected[domain] = urls.flat(2)
+  }
+  return urlsCollected
 }
 
 export function overwriteReleaseUrls (urls) {
@@ -95,28 +99,102 @@ function downloadFile (url) {
   return httpAgent.get(url).then(res => res.readBody())
 }
 
+const getReleaseName = (url, domain) => url.split(`https://${domain}.org/dist/`)[1]
+
 export async function downloadReleases () {
-  const data = await downloadFile('https://nodejs.org/dist/index.json')
-  return JSON.parse(data)
+  const [nodejs, iojs] = await Promise.all([downloadFile('https://nodejs.org/dist/index.json'), downloadFile('https://iojs.org/dist/index.json')])
+  return {
+    nodejs: JSON.parse(nodejs),
+    iojs: JSON.parse(iojs)
+  }
 }
 
-export function generateReport (data) {
-  const getReleaseName = (url) => url.split('https://nodejs.org/dist/')[1]
-  const urls = Object.keys(data)
-  const total = {
-    requests: 0,
-    error: 0,
-    ok: 0
-  }
+const generateMdCurrentIssues = ({ urls, data, domain }) => {
+  const issues = urls.filter(url => !data[domain][url].current)
 
-  urls.forEach(url => {
-    total.requests += data[url].total.requests
-    total.error += data[url].total.error
-    total.ok += data[url].total.ok
-  })
+  if (!issues.length) return ''
 
   return `
-# Node.js Dist Health Report
+## 🚨 Current Issues
+
+${issues.map(url => {
+    return `- [${getReleaseName(url, domain)}](${url})`
+}).join('\n')}
+`
+}
+
+const generateMdLastDay = ({ urls, data, domain }) => {
+  const issues = urls.filter(url => data[domain][url].lastDay.error)
+  if (!issues.length) return ''
+
+  return `
+## 🚨 Last day
+
+| Release | Status | OK | Errors |
+| --- | --- | --- | --- |
+${issues
+    .map(url => {
+    const release = getReleaseName(url, domain)
+    const { ok, error } = data[domain][url].lastDay
+    return `| [${release}](${url}) | ${error ? '❌' : '✅'} | ${ok} | ${error} |`
+}).join('\n')}
+`
+}
+
+const generateMdLastWeek = ({ urls, data, domain }) => {
+  const issues = urls.filter(url => data[domain][url].lastWeek.error)
+  if (!issues.length) return ''
+
+  return `
+## 🚨 Last Week
+
+| Release | Status | OK | Errors |
+| --- | --- | --- | --- |
+${issues
+    .map(url => {
+    const release = getReleaseName(url, domain)
+    const { ok, error } = data[domain][url].lastWeek
+    return `| [${release}](${url}) | ${error ? '❌' : '✅'} | ${ok} | ${error} |`
+}).join('\n')}
+`
+}
+
+const generateMdLastMonth = ({ urls, data, domain }) => {
+  const issues = urls.filter(url => data[domain][url].lastMonth.error)
+  if (!issues.length) return ''
+
+  return `
+## 🚨 Last Month
+
+| Release | Status | OK | Errors |
+| --- | --- | --- | --- |
+${issues
+    .map(url => {
+    const release = getReleaseName(url, domain)
+    const { ok, error } = data[domain][url].lastMonth
+    return `| [${release}](${url}) | ${error ? '❌' : '✅'} | ${ok} | ${error} |`
+}).join('\n')}
+`
+}
+
+export function generateReports (data) {
+  const report = {}
+  Object.keys(data).forEach(domain => {
+    const urls = Object.keys(data[domain])
+    const total = {
+      requests: 0,
+      error: 0,
+      ok: 0
+    }
+
+    urls.forEach(url => {
+      total.requests += data[domain][url].total.requests
+      total.error += data[domain][url].total.error
+      total.ok += data[domain][url].total.ok
+    })
+
+    report[domain] = `
+# Health Report for ${domain}.org/dist
 
 ## ℹ️ Total overtime
 
@@ -124,49 +202,15 @@ export function generateReport (data) {
 - ✅ OK: ${total.ok} (${(total.ok / total.requests * 100).toFixed(2)}%)
 - ❌ Errors: ${total.error} (${(total.error / total.requests * 100).toFixed(2)}%)
 
+${generateMdCurrentIssues({ urls, data, domain })}
 
-## 🚨 Current Issues
+${generateMdLastDay({ urls, data, domain })}
 
-${urls.filter(url => !data[url].current).map(url => {
-    return `- [${getReleaseName(url)}](${url})`
-}).join('\n')}
+${generateMdLastWeek({ urls, data, domain })}
 
-
-## 🚨 Last day
-
-| Release | Status | OK | Errors |
-| --- | --- | --- | --- |
-${urls
-    .filter(url => data[url].lastDay.error)
-    .map(url => {
-    const release = getReleaseName(url)
-    const { ok, error } = data[url].lastDay
-    return `| [${release}](${url}) | ${error ? '❌' : '✅'} | ${ok} | ${error} |`
-}).join('\n')}
-
-## 🚨 Last Week
-
-| Release | Status | OK | Errors |
-| --- | --- | --- | --- |
-${urls
-    .filter(url => data[url].lastWeek.error)
-    .map(url => {
-    const release = getReleaseName(url)
-    const { ok, error } = data[url].lastWeek
-    return `| [${release}](${url}) | ${error ? '❌' : '✅'} | ${ok} | ${error} |`
-}).join('\n')}
-
-## 🚨 Last Month
-
-| Release | Status | OK | Errors |
-| --- | --- | --- | --- |
-${urls
-    .filter(url => data[url].lastMonth.error)
-    .map(url => {
-    const release = getReleaseName(url)
-    const { ok, error } = data[url].lastMonth
-    return `| [${release}](${url}) | ${error ? '❌' : '✅'} | ${ok} | ${error} |`
-}).join('\n')}
-
+${generateMdLastMonth({ urls, data, domain })}
 `
+  })
+
+  return report
 }
