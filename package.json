@@ -16,5 +16,8 @@
   "license": "MIT",
   "devDependencies": {
     "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "@actions/exec": "^1.1.1"
   }
 }
