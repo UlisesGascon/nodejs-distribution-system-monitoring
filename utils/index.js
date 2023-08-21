@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { readdir } from 'node:fs/promises'
 import https from 'node:https'
 import { join } from 'node:path'
-import { exec } from 'node:child_process'
+import exec from '@actions/exec'
 
 export async function getAllResults () {
   const resultsFolder = join(process.cwd(), 'results')
@@ -19,19 +19,13 @@ export async function getAllResults () {
 }
 
 export async function getUrlHeaders (url, userAgent) {
-  return new Promise((resolve, reject) => {
-    exec(`curl  -A "${userAgent}" --head ${url}`, (err, stdout, stderr) => {
-      if (err) {
-        reject(err)
-      }
-
-      if (!stdout.includes('HTTP/2 200')) {
-        console.log(stdout)
-      }
-      // if 200 OK return 1, else return 0
-      resolve(Number(stdout.includes('HTTP/2 200')))
-    })
-  })
+  const { stdout } = await exec.getExecOutput('curl', ['-A', `${userAgent}`, '--head', `${url}`], { silent: true })
+  if (!stdout.includes('HTTP/2 200')) {
+    console.log(`NOT 200 for ${url}`)
+    console.log(stdout)
+  }
+  // if 200 OK return 1, else return 0
+  return Number(stdout.includes('HTTP/2 200'))
 }
 
 // @see: https://github.com/UlisesGascon/micro-utilities/blob/main/packages/array-to-chunks/src/index.ts
