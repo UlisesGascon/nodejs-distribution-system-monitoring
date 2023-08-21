@@ -1,7 +1,5 @@
 on:
     workflow_dispatch:
-    schedule:
-        - cron: '0 * * * *'
 
 name: 📦 Check Availability
 
