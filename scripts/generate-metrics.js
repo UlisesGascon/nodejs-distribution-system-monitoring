@@ -1,7 +1,7 @@
 import * as core from '@actions/core'
-import { getReleases, getAllResults, saveMetrics } from '../utils/index.js'
+import { getReleasesUrls, getAllResults, saveMetrics } from '../utils/index.js'
 
-const releaseUrls = getReleases()
+const releaseUrls = getReleasesUrls()
 const timestamp = Date.now()
 const dayInMs = 24 * 60 * 60 * 1000
 const ts1dayAgo = timestamp - dayInMs

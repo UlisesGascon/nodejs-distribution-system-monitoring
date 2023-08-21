@@ -9,6 +9,7 @@
     "check:availability": "node scripts/check-availability.js",
     "generate:metrics": "node scripts/generate-metrics.js",
     "generate:report": "node scripts/generate-report.js",
+    "generate:checksums": "node scripts/generate-checksums.js",
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
