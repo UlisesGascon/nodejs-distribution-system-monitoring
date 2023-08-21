@@ -1,10 +1,12 @@
+import * as core from '@actions/core'
 import { getReleases, chunkArray, getConfig, getUrlHeaders, saveResults } from '../utils/index.js'
 
+core.notice('Checking availability...')
 const { parallelHttpRequests, userAgent } = getConfig()
 const releaseUrls = getReleases()
 
 const chunks = chunkArray(releaseUrls, parallelHttpRequests)
-console.log(`${releaseUrls.length} release urls divided into ${chunks.length} chunks`)
+core.info(`${releaseUrls.length} release urls divided into ${chunks.length} chunks`)
 
 const timestamp = Date.now()
 
@@ -14,7 +16,7 @@ for (const chunk of chunks) {
     const result = await getUrlHeaders(url, userAgent)
     output[url] = result
   }))
-  console.log(`total processed: ${Object.keys(output).length} / ${releaseUrls.length}`)
+  core.info(`total processed: ${Object.keys(output).length} / ${releaseUrls.length}`)
 }
 
 saveResults(output, timestamp)
