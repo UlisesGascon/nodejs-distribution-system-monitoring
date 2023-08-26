@@ -10,6 +10,7 @@
     "generate:metrics": "node scripts/generate-metrics.js",
     "generate:report": "node scripts/generate-report.js",
     "generate:checksums": "node scripts/generate-checksums.js",
+    "compare:checksums": "node scripts/compare-checksums.js",
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
