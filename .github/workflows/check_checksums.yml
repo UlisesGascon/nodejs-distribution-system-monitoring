@@ -6,7 +6,7 @@ on:
 name: 🕵️‍♂️ Compare checksums
 
 permissions:
-  contents: read
+  contents: write
   packages: none
 
 jobs:
@@ -30,3 +30,9 @@ jobs:
 
     - name: Compare Checksums
       run: npm run compare:checksums
+
+    - name: Commit and push changes
+      uses: devops-infra/action-commit-push@5c032a8e0e84830905895b652bc1766255145cf4 # v1.0.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: "chore: update checksums"
