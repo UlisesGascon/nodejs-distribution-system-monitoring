@@ -82,6 +82,18 @@ function sha256 (content) {
   return createHash('sha256').update(content).digest('hex')
 }
 
+export function compareChecksums (storedChecksums, checksums) {
+  const issues = []
+  Object.keys(checksums).forEach(domain => {
+    Object.keys(checksums[domain]).forEach(url => {
+      if (storedChecksums[domain][url] !== checksums[domain][url]) {
+        issues.push(`${url} has changed`)
+      }
+    })
+  })
+  return issues
+}
+
 export function updateChecksums (storedChecksums, checksums) {
   const extendChecksums = {}
   Object.keys(checksums).forEach(domain => {
